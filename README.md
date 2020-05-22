@@ -37,7 +37,7 @@ and save that information. Upon save, the pop up will go away and the newly adde
 
 ## Wireframe
 
-<img src='./componentTree.png'>
-<img src='./mockup1.png'>
-<img src='./mockup2.png'>
-<img src='./mockup3.png'>
+<img src='./wireframe/componentTree.png'>
+<img src='./wireframe/mockup1.png'>
+<img src='./wireframe/mockup2.png'>
+<img src='./wireframe/mockup3.png'>
