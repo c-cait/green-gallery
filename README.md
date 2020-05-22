@@ -12,8 +12,7 @@ FULL CRUD
 
 ## Functionality
 - Header at the top of the page with app name and button to click to create a new plant
-- Upon clicking create new plant a pop up form will display with fields to enter info about the plant
-and save that information. Upon save, the pop up will go away and the newly added plant will appear in the gallery.
+- Upon clicking create new plant the page will route to NewPlant.js form will display with fields to enter info about the plant and save that information. Upon save, the newly added plant will appear in the gallery.
 - Upon app loading there will be 3-5 hard coded plants shown on the gallery page from the plants array in the JSON file
 - Each plant will have a picture and preview of the plant descrption. There will also be a button 'more info' for each plant
 - When the 'more info' button is clicked the app will route and display a Plant page of that individual plant selected and the full information about that plant (picture, water amount, sun amount, description)
