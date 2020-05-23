@@ -31,11 +31,24 @@ class PlantPopUp extends Component{
             <div className='plant-container' onClick={() => this.props.handleBtnClick(null)}>
 
                 <div className='plant-section'>
+                    <div className='plant-title'>{this.props.currPlant.name}</div>
+                    <img className='pop-up-image' src={this.props.currPlant.image}></img>
+                    <div className='plant-info'>
+                        <span className='info-category'>Sun :&nbsp;</span> 
+                        {this.props.currPlant.sun}
+                    </div>
+                    <div className='plant-info'>
+                        <span className='info-category'>Water :&nbsp;</span> 
+                        {this.props.currPlant.water}
+                    </div>
+                    <div className='plant-info'>
+                        <span className='info-category'>Description :&nbsp;</span> 
+                         {this.props.currPlant.description}
+                    </div>
 
                     <button
                     onClick={() => this.props.handleBtnClick(null)}
                     >Close Me</button>
-                    {this.props.currPlant.name}
                     
                 </div>
 

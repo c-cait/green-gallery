@@ -20,21 +20,25 @@
 
 .card-name{
     font-size: 30px;
-    color: rgb(219, 121, 137);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(18, 66, 94);
     margin: 10px 0px 10px 0px;
+
 }
 
 .more-info-btn {
     background: none;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(18, 66, 94);
     height: 40px;
-    width: 90px;
-    border: 2px solid rgb(219, 121, 137);
+    width: 100px;
+    border: 2px solid rgb(109, 138, 116);
     border-radius: 10px;
 }
 
 .more-info-btn:hover {
-    background: rgb(143, 143, 248);
+    background: #CCE2CB;
 }
 
 .more-info-btn:focus {

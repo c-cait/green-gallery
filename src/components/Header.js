@@ -1,13 +1,14 @@
 import React from 'react';
+import './Header.css';
 
 
 //use semantic tags
 
 function Header(){
     return(
-        <div>
-            Header.js
-        </div>
+        <header className='header-container'>
+            <div className='header-title'>The Green Gallery</div> 
+        </header>
     )
 }
 

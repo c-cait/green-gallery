@@ -27,7 +27,7 @@ class Gallery extends Component{
     render(){
         return(
             <div className='gallery-container'>
-               <div className='gallery-title'>Gallery</div> 
+               <div className='gallery-title'></div> 
 
                 {this.props.plants.map(elem => {
                     return < PlantGalleryCard plant={elem} handleBtnClick={this.handleBtnClick}/>

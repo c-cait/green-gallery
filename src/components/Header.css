@@ -1,0 +1,14 @@
+.header-container{
+    background: rgba(179, 223, 212, 0.5);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: rgb(66, 90, 71);
+    
+}
