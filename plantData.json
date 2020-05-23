@@ -1,4 +1,4 @@
-const plants = [
+[
     {
         "name": "Elephant Ear",
         "image": "https://www.waysidegardens.com/images/xxl/48680.jpg",
