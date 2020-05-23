@@ -1,28 +1,50 @@
 import React, {Component} from 'react';
-import Plant from './Plant'
-import PlantCard from './PlantCard';
+import PlantPopUp from './PlantPopUp'
+import PlantGalleryCard from './PlantGalleryCard';
+import './Gallery.css'
 
 class Gallery extends Component{
     constructor(){
         super();
         this.state = {
-            plantOpen: false
+            plantOpen: false,
+            currPlant: null
         }
+        //currPlant will soon hold the obj we are on
+
+        this.handleBtnClick = this.handleBtnClick.bind(this)
     }
 
+    handleBtnClick(plant){
+        this.setState({
+            plantOpen: !this.state.plantOpen,
+            currPlant: plant
+        })
+    }
 
+    
 
     render(){
         return(
-            <div>
-               <div>Gallery.js</div> 
+            <div className='gallery-container'>
+               <div className='gallery-title'>Gallery</div> 
 
-                < PlantCard plants={this.props.plants} />
+                {this.props.plants.map(elem => {
+                    return < PlantGalleryCard plant={elem} handleBtnClick={this.handleBtnClick}/>
+                })}
+                
 
-                < Plant 
+                {this.state.plantOpen === true ?  
+                < PlantPopUp 
                 editPlant={this.props.editPlant}
                 deletePlant={this.props.deletePlant}
+                handleBtnClick={this.handleBtnClick}
+                currPlant={this.state.currPlant}
                 />
+                : 
+                ''
+                }
+               
             </div>
         )
     }
