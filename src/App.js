@@ -23,7 +23,7 @@ class App extends Component {
 
   //when component mounts (app) we want to set our plants state to the plants array
   componentDidMount(){
-    axios.get('http://localhost:3000/plants')
+    axios.get('http://localhost:3001/plants')
     .then(res => {
       this.setState({plants: res.data})
     })
@@ -64,7 +64,7 @@ class App extends Component {
         < NewPlant 
         createPlant={this.createPlant}
         />
-        
+
         < Footer />
       </div>
     );

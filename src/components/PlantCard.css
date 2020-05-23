@@ -1,0 +1,57 @@
+.plant-card-container{
+    height: auto;
+    width: 400px;
+    display: inline-block;
+    margin-bottom: 30px;
+  
+}
+.plant-card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.plant-image {
+    height: 200px;
+    width: auto;
+}
+
+.card-name{
+    font-size: 30px;
+    color: rgb(219, 121, 137);
+    margin: 10px 0px 10px 0px;
+}
+
+.more-info-btn {
+    background: none;
+    font-size: 16px;
+    height: 40px;
+    width: 90px;
+    border: 2px solid rgb(219, 121, 137);
+    border-radius: 10px;
+}
+
+.more-info-btn:hover {
+    background: rgb(143, 143, 248);
+}
+
+.more-info-btn:focus {
+    outline: 0;
+}
+
+
+/* .card-description{
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.description-word{
+    font-size: 18px;
+    font-weight: bold;
+} */
+
+/* .card-info{
+    align-self: flex-start;
+} */

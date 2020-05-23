@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Plant from './Plant'
+import PlantCard from './PlantCard';
 
 class Gallery extends Component{
     constructor(){
@@ -9,10 +10,14 @@ class Gallery extends Component{
         }
     }
 
+
+
     render(){
         return(
             <div>
-                Gallery.js
+               <div>Gallery.js</div> 
+
+                < PlantCard plants={this.props.plants} />
 
                 < Plant 
                 editPlant={this.props.editPlant}

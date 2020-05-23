@@ -1,7 +1,11 @@
 const express = require('express');
+var cors = require('cors');
+
 const app = express();
 
 app.use(express.json());
+app.use(cors);
+
 
 const ctrl = require('./controllers/plantsController')
 
@@ -25,4 +29,4 @@ app.delete('/plants/:id', ctrl.deletePlant)
 
 
 
-app.listen(3000, () => console.log('server is running port 3000'))
+app.listen(3001, () => console.log('server is running port 3001'))
