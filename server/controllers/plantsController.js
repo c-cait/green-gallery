@@ -1,4 +1,4 @@
-const plants = require('../../plantData.json');
+const plants = require('../../src/plantData.json');
 
 
 module.exports = {
