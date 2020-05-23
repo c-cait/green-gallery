@@ -1,0 +1,36 @@
+const plants = [
+    {
+        "name": "Elephant Ear",
+        "image": "https://www.waysidegardens.com/images/xxl/48680.jpg",
+        "sun": "full or part sun",
+        "water": "keep the soil moist but not saturated",
+        "description": "The elephant ear plant (Colocasia) provides a bold tropical effect in nearly any landscape setting. In fact, these plants are commonly grown for their large, tropical-looking foliage, which is reminiscent of elephant ears."
+    },
+
+    {
+        "name": "Snake Plant",
+        "image": "https://i.pinimg.com/originals/db/d4/01/dbd401cad9d6a26a6e08790e222a7698.jpg",
+        "sun": "can withstand full sun or very low light",
+        "water": "make sure soil is completely dry before watering again. typcially 2-8 week depending on amount of light it recieves.",
+        "description": "The Sansevieria, or known as its more common name, Snake Plant, is a classic houseplant that has gained popularity in modern and contemporary decor. It is the ideal houseplant and can adapt to any environment. The Snake Plant is very forgiving and will tolerate neglect."
+    },
+
+    {
+        "name": "Chinese Money Plant",
+        "image": "https://cdn.shopify.com/s/files/1/0059/8835/2052/products/PANCAKE-PLANT-800-FGT-MAINIMAGE_1024x1024.gif?v=1551309908",
+        "sun": "bright light with no direct sunlight",
+        "water": "The soil needs to mostly dry out between waterings, with more watering required in warmer, sunnier weather.",
+        "description": "Its bright green pancake-shaped leaves provide an adorable and welcome burst of color against white walls. To keep your Chinese money plant nicely shaped, rotate it at least once a week to prevent it from getting lopsided. "
+    },
+
+    {
+        "name": "Zebra Plant",
+        "image": "https://s3.amazonaws.com/eit-planttoolbox-prod/media/images/Aphelandra-quarrosa--Justin-Charles--CC-BY-NC-ND.jpg",
+        "sun": "bright light with no direct sunlight is the best",
+        "water": "It's important to keep the soil moist to the touch, and not water logged or too dry. It's advisable to use luke warm soft water (not hard water).",
+        "description": "The Zebra plant is a fairly popular plant which is grown for its flower bracts and dark green leaves with prominent white colored veins. So if your looking for a flowering or a foliage plant then this is a plant for either or both."
+    }
+
+
+
+]
