@@ -13,7 +13,7 @@
 
 .plant-section {
     height: auto;
-    width: 800px;
+    width: 80%;
     position: absolute;
     top: 0;
     margin-top: 10px;
@@ -24,6 +24,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.close-pop-up-btn-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.close-pop-up-btn{
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin: 5px 5px 0px 0px;
+}
+
+.close-pop-up-btn:hover{
+    cursor: pointer;
+}
+
+.close-pop-up-btn:focus{
+    outline: 0;
 }
 
 .plant-title{
@@ -44,7 +66,82 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .info-category{
     font-size: 20px;
     font-weight: bolder;
+}
+
+
+.plant-info-input-box{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+.plant-info-input-box:focus{
+    outline: 0;
+}
+
+.sun{
+    width: 500px;
+}
+
+.water{
+    width: 500px;
+}
+
+.description{
+    width: 900px;
+}
+
+.control-btn-section{
+    margin-bottom: 10px;
+}
+
+.edit-btn{
+    font-size: 18px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.edit-btn:focus{
+    outline: 0;
+}
+
+.edit-btn:hover{
+    cursor: pointer
+}
+
+.back-out-edit-btn{
+    font-size: 18px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+.back-out-edit-btn:focus{
+    outline: 0;
+}
+
+.back-out-edit-btn:hover{
+    cursor: pointer
+}
+
+.save-btn{
+    font-size: 18px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.save-btn:focus{
+    outline: 0;
+}
+
+.save-btn:hover{
+    cursor: pointer
 }

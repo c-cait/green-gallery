@@ -39,6 +39,7 @@
 
 .more-info-btn:hover {
     background: #CCE2CB;
+    cursor: pointer;
 }
 
 .more-info-btn:focus {

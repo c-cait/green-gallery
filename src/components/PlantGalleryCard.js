@@ -7,9 +7,9 @@ class PlantGalleryCard extends Component{
     }
 
     render(){
-        const {plant} = this.props
+        const {plant, index} = this.props
         return (
-            <div key={plant.id} className='plant-card-container'>
+            <div className='plant-card-container'>
                 <div className='plant-card-section'>
 
                     <img className='plant-image'src={plant.image} alt={plant.name}></img>
@@ -17,7 +17,7 @@ class PlantGalleryCard extends Component{
                     <div className='card-name'>{plant.name}</div>
 
                     <button 
-                        onClick={() => this.props.handleBtnClick(plant)}
+                        onClick={() => this.props.handleGalleryCardClick(index)}
                         className='more-info-btn'>
                         More Info
                     </button>

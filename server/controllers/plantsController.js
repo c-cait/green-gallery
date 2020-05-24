@@ -43,7 +43,7 @@ module.exports = {
 
     updatePlant: (req, res) => {
         //we need to grab the updated info the client will send 
-        const { name, image, sun, water, description } = req.body
+        const {sun, water, description } = req.body
         
         //we must get the index of the elem(object in plants array)
         //that the user is trying to access/update
@@ -60,8 +60,8 @@ module.exports = {
         //or if no update then it will default to previous value
         const updatedPlant = {
             id: parseInt(req.params.id),
-            name: name || plants[index].name,
-            image: image || plants[index].image,
+            name: plants[index].name,
+            image: plants[index].image,
             sun: sun || plants[index].sun,
             water: water || plants[index].water,
             description: description || plants[index].description
@@ -71,7 +71,7 @@ module.exports = {
         //and basically 'replace' that obj with the updated one
         plants[index] = updatedPlant
 
-        res.status(200).send(plants[index])
+        res.status(200).send(plants)
     },
 
     deletePlant: (req, res) => {

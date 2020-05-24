@@ -15,7 +15,6 @@ class App extends Component {
       plants: plantData
     }
 
-    this.viewPlant = this.viewPlant.bind(this)
     this.createPlant = this.createPlant.bind(this)
     this.editPlant = this.editPlant.bind(this)
     this.deletePlant = this.deletePlant.bind(this)
@@ -30,23 +29,29 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  viewPlant(id){
-    // axios.get(`http://localhost:3000/plants/${id}`)
-    // .then(res => {
-    //   this.
-    // })
-  }
-
   createPlant(id, name, image, sun, water, description){
 
   }
 
-  editPlant(id, name, image, sun, water, description){
-
+  editPlant(id, sun, water, description){
+      const body = {sun, water, description}
+      axios.put(`http://localhost:3001/plants/${id}`, body)
+      .then((res) => {
+        this.setState({
+          plants: res.data
+        })
+      })
+      .catch(err => console.log(err))
   }
 
   deletePlant(id){
-
+    axios.delete(`http://localhost:3001/plants/${id}`)
+    .then((res) => {
+      this.setState({
+        plants: res.data
+      })
+    })
+    .catch(err => console.log(err))
   }
 
   render() {
@@ -56,7 +61,6 @@ class App extends Component {
 
         < Gallery 
         plants={this.state.plants}
-        viewPlant={this.viewPlant}
         editPlant={this.editPlant}
         deletePlant={this.deletePlant}
         />

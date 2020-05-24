@@ -8,17 +8,25 @@ class Gallery extends Component{
         super();
         this.state = {
             plantOpen: false,
-            currPlant: null
+            index: null
         }
         //currPlant will soon hold the obj we are on
 
-        this.handleBtnClick = this.handleBtnClick.bind(this)
+        this.handleCloseBtnClick = this.handleCloseBtnClick.bind(this)
+        this.handleGalleryCardClick = this.handleGalleryCardClick.bind(this)
     }
 
-    handleBtnClick(plant){
+    handleCloseBtnClick(){
         this.setState({
-            plantOpen: !this.state.plantOpen,
-            currPlant: plant
+            plantOpen: false,
+            index: null
+        })
+    }
+
+    handleGalleryCardClick(index){
+        this.setState({
+            plantOpen: true,
+            index: index
         })
     }
 
@@ -29,8 +37,8 @@ class Gallery extends Component{
             <div className='gallery-container'>
                <div className='gallery-title'></div> 
 
-                {this.props.plants.map(elem => {
-                    return < PlantGalleryCard plant={elem} handleBtnClick={this.handleBtnClick}/>
+                {this.props.plants.map((elem, index) => {
+                    return < PlantGalleryCard key={elem.id} plant={elem} index={index} handleGalleryCardClick={this.handleGalleryCardClick}/>
                 })}
                 
 
@@ -38,8 +46,8 @@ class Gallery extends Component{
                 < PlantPopUp 
                 editPlant={this.props.editPlant}
                 deletePlant={this.props.deletePlant}
-                handleBtnClick={this.handleBtnClick}
-                currPlant={this.state.currPlant}
+                handleCloseBtnClick={this.handleCloseBtnClick}
+                currPlant={this.props.plants[this.state.index]}
                 />
                 : 
                 ''
