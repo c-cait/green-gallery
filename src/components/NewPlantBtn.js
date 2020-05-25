@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import NewPlant from './NewPlant';
+import './NewPlantBtn.css'
 
 class NewPlantBtn extends Component {
     constructor() {
@@ -19,8 +20,8 @@ class NewPlantBtn extends Component {
 
     render() {
         return (
-        <div> 
-            <button onClick={() => this.handleNewPlantPopUp()}>Create a New Plant</button>
+        <div className='new-plant-btn-container'> 
+            <button onClick={() => this.handleNewPlantPopUp()} className='create-plant-btn'>Create New Plant</button>
             
             {this.state.newPlantOpen ? 
             < NewPlant createPlant={this.props.createPlant} handleNewPlantPopUp={this.handleNewPlantPopUp} /> 

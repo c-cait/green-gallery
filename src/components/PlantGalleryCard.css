@@ -1,9 +1,12 @@
 .plant-card-container{
     height: auto;
-    width: 400px;
+    width: 30%;
     display: inline-block;
+    padding: 5px;
     margin-bottom: 30px;
-  
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .plant-card-section{
     display: flex;
@@ -22,7 +25,7 @@
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     color: rgb(18, 66, 94);
-    margin: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
 
 }
 
@@ -31,7 +34,7 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: rgb(18, 66, 94);
-    height: 40px;
+    height: 35px;
     width: 100px;
     border: 2px solid rgb(109, 138, 116);
     border-radius: 10px;

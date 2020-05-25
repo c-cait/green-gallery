@@ -1,6 +1,6 @@
 .header-container{
-    background: rgba(179, 223, 212, 0.5);
-    height: 75px;
+    background: rgb(213, 237,231);
+    height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,22 @@
 
 .header-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    color: rgb(66, 90, 71);
-    
+    font-size: 70px;
+    color: rgb(23, 82, 66);
+    letter-spacing: 2px;
 }
+
+.header-title{
+    text-shadow: 0 0px 0 rgb(30, 105, 85),
+                 0 1px 0 rgb(30, 105, 85),
+                 0 2px 0 rgb(30, 105, 85),
+                 0 3px 0 rgb(30, 105, 85),
+                 0 4px 0 rgb(30, 105, 85),
+                 0 10px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 4px 4px rgba(0,0,0,.3),
+                 0 6px 6px rgba(0,0,0,.2),
+                 0 8px 8px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+  }

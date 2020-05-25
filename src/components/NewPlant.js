@@ -91,6 +91,12 @@ class NewPlant extends Component{
 
                     </div>
 
+                    <div>
+                        <button 
+                        onClick={() => {this.props.createPlant(this.state.newName, this.state.newImage, this.state.newSun, this.state.newWater, this.state.newDescription); this.props.handleNewPlantPopUp()}}>
+                            Create New Plant
+                        </button>
+                    </div>
 
                 </div>
             </div>

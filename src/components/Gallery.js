@@ -35,12 +35,11 @@ class Gallery extends Component{
     render(){
         return(
             <div className='gallery-container'>
-               <div className='gallery-title'></div> 
-
+                {/* <div className='gallery-card-flex-container'> */}
                 {this.props.plants.map((elem, index) => {
                     return < PlantGalleryCard key={elem.id} plant={elem} index={index} handleGalleryCardClick={this.handleGalleryCardClick}/>
                 })}
-                
+                {/* </div> */}
 
                 {this.state.plantOpen === true ?  
                 < PlantPopUp 

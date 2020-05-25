@@ -28,8 +28,13 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  createPlant(id, name, image, sun, water, description){
-
+  createPlant(name, image, sun, water, description){
+    const body = {name, image, sun, water, description}
+    axios.post('http://localhost:3001/plants', body)
+    .then(res => {
+      this.setState({plants: res.data})
+    })
+    .catch(err => console.log(err))
   }
 
   editPlant(id, sun, water, description){
