@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import './App.css';
 import plantData from './plantData.json';
 import axios from 'axios';
-
 import Header from './components/Header';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
-import NewPlant from './components/NewPlant';
+import NewPlantBtn from './components/NewPlantBtn';
 
 class App extends Component {
   constructor(){
@@ -58,6 +57,10 @@ class App extends Component {
     return (
       <div>
         < Header />
+        
+        < NewPlantBtn 
+        createPlant={this.createPlant}
+        />
 
         < Gallery 
         plants={this.state.plants}
@@ -65,9 +68,7 @@ class App extends Component {
         deletePlant={this.deletePlant}
         />
 
-        < NewPlant 
-        createPlant={this.createPlant}
-        />
+        
 
         < Footer />
       </div>
