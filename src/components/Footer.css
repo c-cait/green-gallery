@@ -1,0 +1,22 @@
+.footer-container{
+    width: 100%;
+    /* background: rgb(213, 237,231); */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.copyright-footer{
+    color: rgb(23, 82, 66);
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+.copy-icon{
+ position: relative;
+ top: 3px;
+    
+}
