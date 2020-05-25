@@ -78,3 +78,21 @@
 .new-description{
     height: 200px;
 }
+
+.new-plant-btn{
+    font-size: 25px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.new-plant-btn:focus{
+    outline: 0;
+}
+
+.new-plant-btn:hover{
+    cursor: pointer;
+    background:white;
+}

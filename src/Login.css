@@ -99,3 +99,8 @@
     background: rgba(213, 237,231,.4);
     cursor: pointer;
 }
+
+.logo-leaf-icon-login{
+    font-size: 30px;
+    padding-left: 8px;
+}

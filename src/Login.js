@@ -1,12 +1,13 @@
 import React from 'react';
-import './Login.css'
+import './Login.css';
+import {GiLindenLeaf} from 'react-icons/gi';
 
 function Login(props) {
     return (
       <div className="login-container">
        <div className='login-section'>
            <div className='login-title'>
-               The Green Gallery
+               Sprout<GiLindenLeaf className='logo-leaf-icon-login'/>
            </div>
            <form className='login-form'>
                <input type='text' className='login-input' placeholder='username'></input>

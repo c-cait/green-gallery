@@ -49,7 +49,7 @@
 }
 
 .plant-title{
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -66,6 +66,10 @@
 .pop-up-image{
     height: 400px;
     width: auto;
+}
+
+.sub-pop-up-info-2{
+    width: 800px;
 }
 
 .plant-info{
@@ -88,6 +92,7 @@
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 5px;
+    
 }
 
 .plant-info-input-box:focus{
@@ -123,7 +128,8 @@
 }
 
 .edit-btn:hover{
-    cursor: pointer
+    cursor: pointer;
+    
 }
 
 .back-out-edit-btn{

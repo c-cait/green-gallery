@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import {GiLindenLeaf} from 'react-icons/gi';
 
 
 //use semantic tags
@@ -7,7 +8,7 @@ import './Header.css';
 function Header(props){
     return(
         <header className='header-container'>
-            <div className='header-title'>The Green Gallery</div>
+            <div className='header-title'>Sprout<GiLindenLeaf className='logo-leaf-icon-header'/></div>
         
             <button className='logout-btn'
             onClick={() =>{props.handleAppClose()}}
