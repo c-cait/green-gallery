@@ -1,6 +1,6 @@
 .plant-card-container{
     height: auto;
-    width: 30%;
+    width: 28%;
     display: inline-block;
     padding: 5px;
     margin-bottom: 30px;
@@ -8,6 +8,11 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+.plant-card-container:hover{
+    cursor: pointer;
+    background: rgb(180, 180, 180);
+}
+
 .plant-card-section{
     display: flex;
     flex-direction: column;
@@ -29,24 +34,5 @@
 
 }
 
-.more-info-btn {
-    background: none;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(18, 66, 94);
-    height: 30px;
-    width: 100px;
-    border: .2px solid rgb(23, 82, 66);
-    box-shadow:  0 0 4px rgb(23, 82, 66);
-    border-radius: 5px;
-}
 
-.more-info-btn:hover {
-    background: rgba(213,237,231,.6);
-    cursor: pointer;
-}
-
-.more-info-btn:focus {
-    outline: 0;
-}
 

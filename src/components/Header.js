@@ -4,10 +4,14 @@ import './Header.css';
 
 //use semantic tags
 
-function Header(){
+function Header(props){
     return(
         <header className='header-container'>
-            <div className='header-title'>The Green Gallery</div> 
+            <div className='header-title'>The Green Gallery</div>
+        
+            <button className='logout-btn'
+            onClick={() =>{props.handleAppClose()}}
+            >Logout</button>
         </header>
     )
 }

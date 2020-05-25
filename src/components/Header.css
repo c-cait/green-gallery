@@ -7,24 +7,31 @@
     position: relative;
 }
 
+
 .header-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color: rgb(23, 82, 66);
     letter-spacing: 2px;
 }
 
-.header-title{
-    text-shadow: 0 0px 0 rgb(30, 105, 85),
-                 0 1px 0 rgb(30, 105, 85),
-                 0 2px 0 rgb(30, 105, 85),
-                 0 3px 0 rgb(30, 105, 85),
-                 0 4px 0 rgb(30, 105, 85),
-                 0 10px 1px rgba(0,0,0,.1),
-                 0 0 5px rgba(0,0,0,.1),
-                 0 4px 4px rgba(0,0,0,.3),
-                 0 6px 6px rgba(0,0,0,.2),
-                 0 8px 8px rgba(0,0,0,.25),
-                 0 10px 10px rgba(0,0,0,.2),
-                 0 20px 20px rgba(0,0,0,.15);
-  }
+.logout-btn{
+   position: absolute;
+   right: 20px;
+   top: 10px;
+   background: none;
+   color: rgb(23, 82, 66);
+   font-family: 'Poppins', sans-serif;
+   border: 1px solid rgb(23, 82, 66);
+   border-radius: 5px;
+   font-size: 18px;
+}
+
+.logout-btn:focus{
+    outline: none;
+}
+
+.logout-btn:hover{
+    cursor: pointer;
+    background: white
+}

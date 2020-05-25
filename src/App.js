@@ -6,17 +6,26 @@ import Header from './components/Header';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import NewPlantBtn from './components/NewPlantBtn';
+import Landing from './Landing';
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      plants: plantData
+      plants: plantData,
+      appOpen: false
     }
 
     this.createPlant = this.createPlant.bind(this)
     this.editPlant = this.editPlant.bind(this)
     this.deletePlant = this.deletePlant.bind(this)
+    this.handleApp = this.handleApp.bind(this)
+  }
+
+  handleApp(){
+    this.setState({
+      appOpen: !this.state.appOpen
+    })
   }
 
   //when component mounts (app) we want to set our plants state to the plants array
@@ -61,7 +70,9 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        < Header />
+        {this.state.appOpen ? 
+        <div>
+        < Header handleAppClose={this.handleApp}/>
         
         < NewPlantBtn 
         createPlant={this.createPlant}
@@ -76,6 +87,13 @@ class App extends Component {
         
 
         < Footer />
+        </div>
+        :
+        <div>
+        < Landing handleAppOpen={this.handleApp}/>
+        </div>
+        }
+
       </div>
     );
   }
