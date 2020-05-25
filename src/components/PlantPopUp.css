@@ -3,7 +3,6 @@
     width: 100vw;
     display: flex;
     position: absolute;
-    top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -24,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0px 20px 0px 20px;
 }
 
 .close-pop-up-btn-section{
@@ -54,6 +54,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.plant-pop-up-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+
 .pop-up-image{
     height: 400px;
     width: auto;
@@ -80,20 +89,21 @@
     border: none;
     border-radius: 5px;
 }
+
 .plant-info-input-box:focus{
     outline: 0;
 }
 
 .sun{
-    width: 500px;
+    width: 100%;
 }
 
 .water{
-    width: 500px;
+    width: 100%;
 }
 
 .description{
-    width: 900px;
+    width: 100%;
 }
 
 .control-btn-section{

@@ -67,40 +67,44 @@ class PlantPopUp extends Component{
 
                     <div className='plant-title'>{this.props.currPlant.name}</div>
 
-                    <img className='pop-up-image' src={this.props.currPlant.image}></img>
+                    <div className='plant-pop-up-info-container'>
+                        <img className='pop-up-image' src={this.props.currPlant.image}></img>
+                        
+                        <div className='sub-pop-up-info-2'>
+                            <div className='plant-info'>
 
-                    <div className='plant-info'>
+                                <span className='info-category'>Sun :&nbsp;</span> 
+                                {this.state.editMode ? 
+                                <input 
+                                className='plant-info-input-box sun' type='text' placeholder={this.props.currPlant.sun}
+                                onChange={(e) => this.handleSun(e.target.value)}
+                                ></input> 
+                                : this.props.currPlant.sun}
 
-                        <span className='info-category'>Sun :&nbsp;</span> 
-                        {this.state.editMode ? 
-                        <input 
-                        className='plant-info-input-box sun' type='text' placeholder={this.props.currPlant.sun}
-                        onChange={(e) => this.handleSun(e.target.value)}
-                        ></input> 
-                        : this.props.currPlant.sun}
+                            </div>
 
-                    </div>
+                            <div className='plant-info'>
 
-                    <div className='plant-info'>
+                                <span className='info-category'>Water :&nbsp;</span> 
+                                {this.state.editMode ? 
+                                <input className='plant-info-input-box water' type='text' placeholder={this.props.currPlant.water}
+                                onChange={(e) => this.handleWater(e.target.value)}
+                                ></input> 
+                                : this.props.currPlant.water}
 
-                        <span className='info-category'>Water :&nbsp;</span> 
-                        {this.state.editMode ? 
-                        <input className='plant-info-input-box water' type='text' placeholder={this.props.currPlant.water}
-                        onChange={(e) => this.handleWater(e.target.value)}
-                        ></input> 
-                        : this.props.currPlant.water}
+                            </div>
 
-                    </div>
+                            <div className='plant-info'>
 
-                    <div className='plant-info'>
+                                <span className='info-category'>Description :&nbsp;</span> 
+                                {this.state.editMode ? 
+                                <textarea className='plant-info-input-box description' placeholder={this.props.currPlant.description}
+                                onChange={(e) => this.handleDescription(e.target.value)}
+                                ></textarea> 
+                                : this.props.currPlant.description}
 
-                        <span className='info-category'>Description :&nbsp;</span> 
-                        {this.state.editMode ? 
-                        <textarea className='plant-info-input-box description' placeholder={this.props.currPlant.description}
-                        onChange={(e) => this.handleDescription(e.target.value)}
-                        ></textarea> 
-                        : this.props.currPlant.description}
-
+                            </div>
+                        </div>
                     </div>
 
                     <div className='control-btn-section'>
